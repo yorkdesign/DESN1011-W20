@@ -12,6 +12,15 @@ a
 		margin-right: -0.5rem
 	&:hover, &:focus
 		border: 1px solid $grey
+	&.link 
+		&:after
+			@extend %material !optional
+			content: "arrow_forward"
+	&.download 
+		&:after
+			@extend %material !optional
+			content: "arrow_downward"
+
 
 p 
 	a
