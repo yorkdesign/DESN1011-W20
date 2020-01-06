@@ -1,0 +1,92 @@
+a
+	text-transform: uppercase
+	color: $blue
+	text-decoration: none
+	font-size: 0.875rem
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem
+	margin: 0.5rem 0 0.5rem 0rem
+	border: 1px solid transparent
+	&:first-of-type 
+		margin-left: -0.5rem
+	&:last-of-type
+		margin-right: -0.5rem
+	&:hover, &:focus
+		border: 1px solid $grey
+
+p 
+	a
+		text-transform: none
+		font-size: inherit
+		text-decoration: underline
+		color: inherit
+		padding: 0
+		margin: 0 
+		border: none
+		&:last-of-type
+			margin: 0 
+		&:first-of-type  
+			margin: 0 
+		&:hover
+			border: none
+			color: $blue
+
+
+.large 
+	font-size: 1.125rem
+
+%h1
+	font-family: $display
+	font-size: 3rem
+	font-weight: 800
+	margin: 0 0 1rem 0
+	@include font-smooth
+	color: inherit
+
+%h2
+	font-size: 1.5rem
+	font-family: $display
+	margin-bottom: 0
+	font-weight: 900
+	@include font-smooth
+	color: inherit
+
+%h3
+	font-size: 1rem
+	margin: 1.5rem 0 -0.5rem 0
+	color: $blue
+
+%h4
+	font-size: 0.875rem
+	margin: 1.5rem 0 -0.5rem 0
+
+h1
+	@extend %h1 !optional
+
+.h1
+	@extend %h1 !optional
+
+h2
+	@extend %h2 !optional
+
+.h2 
+	@extend %h2 !optional
+
+h3
+	@extend %h3 !optional
+
+.h3
+	@extend %h3 !optional
+
+h4
+	@extend %h4 !optional
+
+.h4
+	@extend %h4 !optional
+
+.slug
+	font-family: $font
+	font-size: 0.875rem
+	font-weight: 700
+	text-transform: uppercase
+	margin: 0
+	@include font-smooth

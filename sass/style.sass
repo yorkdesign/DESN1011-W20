@@ -1,0 +1,73 @@
+@import url("https://use.typekit.net/utw0wvq.css")
+@import 'flexboxgrid'
+@import 'variables'
+
+.max-width 
+	max-width: 1200px
+	margin: 0 2rem
+
+html, body
+	font-size: 16px
+	line-height: 1.375
+	font-family: $font
+	color: $black
+	font-weight: 400
+	padding: 0
+	margin: 0
+
+@import 'typography'
+		
+main 
+	margin: 6rem
+
+header
+	background-color: black
+	color: white
+	padding: 1rem 0
+	z-index: 2
+	a 
+		color: white
+
+.side-rail
+	display: none
+	background-color: white
+	position: absolute
+	top: 8.5rem
+	left: 0rem
+	width: 16.67%
+	max-width: 205.38px //This is the max-width of 16.67% on a max-width container of 1200px
+	height: 100%
+	&.sticky
+		position: fixed
+		top: 0rem
+	@media (min-width: 768px)
+		display: block
+	ul 
+		list-style-type: none
+		padding: 1rem 1rem 1rem 1rem
+		margin-top: 1rem
+		border-top: 4px solid $blue
+		li 
+			margin-bottom: 0
+			&.inactive
+				opacity: 0.4
+			a
+				text-decoration: none
+				text-transform: none
+				font-size: 1rem
+				color: $black
+				display: block
+				width: 100%
+				&:hover
+					color: $blue
+					
+.week 
+	border-bottom: 1px solid $grey
+	padding-bottom: 3rem
+	margin-bottom: 3rem
+	section
+		padding: 2rem
+		background-color: $light-grey
+		margin: 2rem 0
+		h3.h2:first-child
+			margin-top: 0
