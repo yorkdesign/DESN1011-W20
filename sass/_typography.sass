@@ -13,10 +13,12 @@ a
 	&:hover, &:focus
 		border: 1px solid $grey
 	&.link 
+		white-space: nowrap
 		&:after
 			@extend %material !optional
 			content: "arrow_forward"
 	&.download 
+		white-space: nowrap
 		&:after
 			@extend %material !optional
 			content: "arrow_downward"
