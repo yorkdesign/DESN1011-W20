@@ -24,3 +24,27 @@ gulp.task('watch', function(){
 
 // Run tasks
 gulp.task('default',gulp.series('watch'));
+
+
+///GRID
+//style paths
+var ginput = 'assets/grid_example/sass/**/*.sass',
+    goutput = 'assets/grid_example/css/';
+
+gulp.task('gstyles', function() {
+    return gulp.src(ginput)
+		.pipe(sourcemaps.init())
+		.pipe(sass().on('error', sass.logError))
+		.pipe(sourcemaps.write())
+		.pipe(autoprefixer())
+		.pipe(gulp.dest(goutput));
+});
+
+
+// detect changes in input
+gulp.task('gwatch', function(){
+  gulp.watch(ginput,gulp.series('gstyles'));
+});
+
+// Run tasks
+gulp.task('default',gulp.series('gwatch'));
