@@ -48,3 +48,28 @@ gulp.task('gwatch', function(){
 
 // Run tasks
 gulp.task('default',gulp.series('gwatch'));
+
+
+
+///HTML
+//style paths
+var hinput = 'assets/html_example/sass/**/*.sass',
+    houtput = 'assets/html_example/css/';
+
+gulp.task('hstyles', function() {
+    return gulp.src(hinput)
+		.pipe(sourcemaps.init())
+		.pipe(sass().on('error', sass.logError))
+		.pipe(sourcemaps.write())
+		.pipe(autoprefixer())
+		.pipe(gulp.dest(houtput));
+});
+
+
+// detect changes in input
+gulp.task('hwatch', function(){
+  gulp.watch(hinput,gulp.series('hstyles'));
+});
+
+// Run tasks
+gulp.task('default',gulp.series('hwatch'));

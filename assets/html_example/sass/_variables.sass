@@ -1,0 +1,28 @@
+$font: 'Roboto', sans-serif
+
+$black: #242424
+$blue: #234BB0
+$grey: #3D3D3D
+
+@mixin font-smooth() 
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering:optimizeLegibility
+
+@mixin border-radius($border-radius) 
+  -moz-border-radius: $border-radius
+  -webkit-border-radius: $border-radius
+  border-radius: $border-radius
+
+@mixin transition($value) 
+  -webkit-transition: $value /* Safari */
+    transition: $value
+
+@mixin transform($value) 
+  -webkit-transform: $value /* Safari */
+    transform: $value
+
+@mixin box-shadow($value) 
+  -webkit-box-shadow: $value
+  -moz-box-shadow: $value
+  box-shadow: $value
