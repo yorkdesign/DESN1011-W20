@@ -23,6 +23,13 @@ p
 	@include font-smooth
 	color: inherit
 
+%h3
+	font-size: 1.5rem
+	font-weight: 900
+	@include font-smooth
+	margin-top: 2rem
+	margin-bottom: 0rem
+
 h1
 	@extend %h1 !optional
 
@@ -35,6 +42,11 @@ h2
 .h2 
 	@extend %h2 !optional
 
+h3
+	@extend %h3 !optional
+
+.h3
+	@extend %h3 !optional
 
 .caption 
 	font-size: 1rem
