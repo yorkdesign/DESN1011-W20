@@ -1,0 +1,43 @@
+IMAGES 101:
+
+******************************** 
+Which image type should I save?
+********************************
+1. If an image is created only out of shapes/vectors that 
+   can be live edited in illustrator or Figma: save it as an SVG
+
+2. If an image is a photograph or complex image with textures, 
+   gradients, etc, save it as either a PNG or JPG. 
+   
+   PNG will allow you to save an image and keep the transparency 
+   in the background. 
+
+   If an image has a clear/transparent background and you save it 
+   as a JPG it will give you an image with a white background instead.
+
+3. If an image requires simple animation, keep it's format as a gif.
+
+************************************
+What size should I save the image as?
+************************************
+1. SVGs can be any size as they are scalable. Generally, export it at 
+   the exact size it will mostly be viewed at.
+2. For JPGs, and PNGs:
+    A. In Figma export at 2x.
+    B. In photoshop or illustrator, export it at twice the size of 
+       exactly what size you intend the image to be viewed.
+
+
+*********************
+What about FILE size?
+*********************
+1. Compress all JPG and PNG images here: https://tinypng.com/ or 
+   here: https://compressor.io/compress. 
+   
+   Download the compressed images and then replace them in your 
+   images folder.
+   
+   I prefer tinypng.com as a compressor, but compressor.io has a 
+   larger file size limit if you have a big guy.
+   
+   You do not need to compress SVGs.

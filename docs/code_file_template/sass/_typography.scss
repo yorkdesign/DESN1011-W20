@@ -1,0 +1,44 @@
+html, body {
+    font-family: $body-font;
+    font-size: 16px; //This is defining what 1rem is equal to. 1rem = 16px.
+    font-weight: 400; //this is the weight value taken from google fonts. 400 is typically normal or regular weight.
+}
+
+//paragraph text
+p {
+    
+}
+
+//headings
+h1 {
+    font-family: $display-font;
+    font-weight: 700; //this is the weight value taken from google fonts. 700 is typically bold.
+}
+
+h2 {
+    font-family: $display-font;
+}
+
+h3 {
+    font-family: $display-font;
+}
+
+h4 {
+    font-family: $display-font;
+}
+
+h5 {
+    font-family: $display-font;
+}
+
+h6 {
+    font-family: $display-font;
+}
+
+//links
+a {
+    
+    &:hover {
+        //when a link is hovered on... 
+    }
+}

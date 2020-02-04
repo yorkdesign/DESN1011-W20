@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'typography';
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%; //this makes sure an image never expands outside of its container.
+    height: auto; //this makes sure the height scales automatically when the width changes to keep the dimensions the same.
+}

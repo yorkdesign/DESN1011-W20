@@ -1,0 +1,17 @@
+//here we are grabing the Google font from Google.
+    //1. Find your font at: https://fonts.google.com/
+    //2. Select the font with the plus icon
+    //3. You can select multiple fonts that you want to use before continuing.
+    //4. Customize it in the customize tab by selecting what weights you want to use
+    //5. Go to the embed tab. Select @IMPORT. 
+    //6. Copy the code inbetween the <style></style> tags. Do not copy the style tags themselves.
+    //7. Replace the line below this with that newly copied code.
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+//here we are defining our fonts.
+$bodyfont: 'Roboto', sans-serif; 
+$displayfont: 'Roboto', sans-serif; 
+
+//here's some examples of using variables to define re-used colours
+$primary-colour: #000000;
+$secondary-colour: #ffffff;
