@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Absolute positioning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="absolute">
+    <nav>
+        <h2>Select another position property:</h2>
+        <ul>
+            <li><a href="index.html">Static</a></li>
+            <li><a href="absolute.html" class="active">Absolute</a></li>
+            <li><a href="fixed.html">Fixed</a></li>
+            <li><a href="relative.html">Relative</a></li>
+        </ul>
+    </nav>
+
+    <div class="box grey-box static">
+        <div class="tooltip">
+            position: static;
+        </div>
+        <div class="box pink-box">
+            <div class="tooltip">
+                position: absolute;<br />
+                top: 0;<br />
+                right: 0;
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/scripts.js"></script>
+
+</html>
