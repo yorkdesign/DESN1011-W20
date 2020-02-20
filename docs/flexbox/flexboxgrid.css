@@ -29,13 +29,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.625rem;
-  margin-left: -0.625rem;
-}
-
-.col {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
 }
 
 .row.reverse {
@@ -69,6 +64,8 @@
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
   flex: 0 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .col-xs {
@@ -260,16 +257,6 @@
 }
 
 @media only screen and (min-width: 48em) {
-  .row {
-    margin-right: -1rem;
-    margin-left: -1rem;
-  }
-  
-  .col {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .col-sm,
   .col-sm-1,
   .col-sm-2,
