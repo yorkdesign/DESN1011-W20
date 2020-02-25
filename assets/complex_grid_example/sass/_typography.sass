@@ -1,0 +1,48 @@
+a
+	text-transform: uppercase
+	color: #ffffff
+	text-decoration: none
+	font-size: 0.875rem
+	&:hover 
+		text-decoration: underline
+
+p
+	line-height: 1.2
+
+.large 
+	font-size: 1.125rem
+
+%h1
+	font-family: $font
+	font-size: 2rem
+	font-weight: 900
+	margin: 0
+	@include font-smooth
+	color: inherit
+
+%h2
+	font-size: 1.125rem
+	font-family: $font
+	margin: 0
+	margin-bottom: 0.25rem
+	font-weight: 900
+	@include font-smooth
+	color: inherit
+
+h1
+	@extend %h1 !optional
+
+.h1
+	@extend %h1 !optional
+
+h2
+	@extend %h2 !optional
+
+.h2 
+	@extend %h2 !optional
+
+
+.caption 
+	font-size: 1rem
+	color: $grey
+	margin: 0
