@@ -33,11 +33,6 @@
   margin-left: -0.625rem;
 }
 
-.col {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
 .row.reverse {
   -ms-flex-direction: row-reverse;
   -webkit-box-orient: horizontal;
@@ -69,6 +64,8 @@
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
   flex: 0 0 auto;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .col-xs {
@@ -263,11 +260,6 @@
   .row {
     margin-right: -1rem;
     margin-left: -1rem;
-  }
-  
-  .col {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .col-sm,
