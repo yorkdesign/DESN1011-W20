@@ -1,12 +1,16 @@
 /* Uncomment and set these variables to customize the grid. */
 
-.container, .container-fluid {
+.container-fluid {
+  padding: 0;
+  width: 100%;
+}
+
+.container-fluid, .container {
   margin-right: auto;
   margin-left: auto;
 }
 
 .container {
-  max-width: 1200px;
   padding-right: 2rem;
   padding-left: 2rem;
 }
@@ -25,8 +29,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.625rem;
-  margin-left: -0.625rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
 }
 
 .row.reverse {
@@ -60,8 +64,8 @@
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
   flex: 0 0 auto;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .col-xs {
@@ -253,26 +257,8 @@
 }
 
 @media only screen and (min-width: 48em) {
-  .row {
-    margin-right: -1rem;
-    margin-left: -1rem;
-  }
-
-  .col-xs,
-  .col-xs-1,
-  .col-xs-2,
-  .col-xs-3,
-  .col-xs-4,
-  .col-xs-5,
-  .col-xs-6,
-  .col-xs-7,
-  .col-xs-8,
-  .col-xs-9,
-  .col-xs-10,
-  .col-xs-11,
-  .col-xs-12 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .container {
+    width: 46rem;
   }
 
   .col-sm,
@@ -486,6 +472,10 @@
 }
 
 @media only screen and (min-width: 62em) {
+  .container {
+    width: 61rem;
+  }
+
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -697,6 +687,10 @@
 }
 
 @media only screen and (min-width: 75em) {
+  .container {
+    width: 71rem;
+  }
+
   .col-lg,
   .col-lg-1,
   .col-lg-2,
