@@ -12,7 +12,9 @@
 		margin: 0 2rem
 
 html, body
-	font-size: 16px
+	font-size: 14px
+	@media (min-width: 768px)
+		font-size: 16px
 	line-height: 1.375
 	font-family: $font
 	color: $black
@@ -33,6 +35,13 @@ header
 	z-index: 2
 	a 
 		color: white
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem
+		&:first-of-type 
+			margin-left: -0.5rem
+		&:last-of-type
+			margin-right: -0.5rem
+		&.link
+			display: inline-block
 
 .side-rail
 	display: none
