@@ -1,0 +1,172 @@
+@import "flexboxgrid";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 1rem;
+
+  @media (min-width: 48rem) {
+    padding: 0 2rem;
+  }
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: $primary-font;
+  color: $text;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  background-color: $light;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@import "typography";
+
+.top-bar {
+  background-color: $primary;
+  color: $light;
+  padding: 0.625rem 0;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  a {
+    color: $light;
+
+    &:hover {
+      color: $light;
+    }
+  }
+
+  nav {
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+
+    a.link {
+      margin: 0.5rem 0.5rem;
+
+      @media (min-width: 25rem) {
+        margin: 0.5rem 0.875rem;
+      }
+
+      @media (min-width: 48rem) {
+        margin: 0.5rem 0.625rem;
+      }
+    }
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero {
+  background-image: url("../images/enemy-spider.gif");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  height: 70vh;
+  margin-bottom: 2rem;
+
+  .overlay {
+    display: flex;
+    flex-direction: columns;
+    align-items: flex-end;
+    padding: 5rem 0;
+  }
+}
+
+.story-lead {
+  border-top: 1px solid white;
+  padding-top: 1rem;
+
+  p {
+    @extend %large !optional;
+
+    margin: 0.875rem 0;
+  }
+}
+
+.card {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  .card-image {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+
+      @include transition(all 0.5s);
+    }
+
+    &:hover {
+      img {
+        @include transform(scale(1.025));
+      }
+    }
+  }
+
+  .card-content {
+    padding-top: 1rem;
+    border-bottom: 1px solid $text;
+    padding-bottom: 1.625rem;
+    flex-grow: 1;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &.card-wide {
+    .card-content {
+      @media (min-width: 62rem) {
+        padding-top: 0;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.side-bar {
+  header {
+    border-top: 0.375rem solid $primary;
+    padding-top: 0.375rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.story-mini {
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0.325rem 0 0 0;
+  }
+}
+
+.promotional {
+  margin-top: 3rem;
+}
