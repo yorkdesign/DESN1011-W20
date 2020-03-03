@@ -1,0 +1,39 @@
+$primary-font: "Lora", serif;
+$secondary-font: "Oswald", sans-serif;
+
+$primary: #C88058;
+$text: #3D2214;
+$light: #F9F3ED;
+
+
+
+@mixin font-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering:optimizeLegibility {}
+}
+
+@mixin border-radius($border-radius) {
+  -moz-border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value {
+    transition: $value;
+  };
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value {
+    transform: $value;
+  };
+}
+
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
