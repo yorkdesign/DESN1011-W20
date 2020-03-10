@@ -1,15 +1,20 @@
-function openPopup() {
-    $('.popup').addClass('open');
-}
+// function openPopup() {
+//     $('.popup').addClass('open');
+// }
 
-setTimeout(openPopup, 1000);
+// setTimeout(openPopup, 1000);
 
-$('.close-popup').click(function(event) {
-    event.preventDefault();
-    $('.popup').removeClass('open');
-});
+// $('.close-popup').click(function(event) {
+//     event.preventDefault();
+//     $('.popup').removeClass('open');
+// });
 
 $('.card-image').click(function(event) {
     event.preventDefault();
-    $('.slider').toggleClass('open');
+    $('.window').toggleClass('open');
+});
+
+$('.window-close').click(function(event) {
+    event.preventDefault();
+    $('.window').toggleClass('open');
 });

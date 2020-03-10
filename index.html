@@ -39,8 +39,9 @@
 				<li class="inactive">Week 12</li>
 				<li class="inactive">Week 11</li>
 				<li class="inactive">Week 10</li>-->
+				<li><a href="#week9-5">Tutorial</a></li>
 				<li><a href="#week9">Week 9</a></li>
-				<li class="inactive"><a href="#week8-5">Week 8.5</a></li>
+				<li class="inactive"><a href="#week8-5">Tutorial</a></li>
 				<li class="inactive"><a href="#week8">Week 8</a></li>
 				<li class="inactive">Reading Week</li>
 				<li class="inactive"><a href="#week6">Week 6</a></li>
@@ -57,6 +58,45 @@
 		<div class="max-width container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<section class="week" id="week9-5" name="week9-5">
+						<h1 class="slug">Week 9.5</h1>
+						<h2 class="h1">Online tutorial: Horizontal scroll</h2>
+						<p>A lot of students have a horizontal scroll webpage, so this is a quick tutorial going over how to make it.</p>
+						<a href="https://www.youtube.com/watch?v=1B4kJEDdlK8" target="_blank" class="link">Video</a>
+						<section>
+							<h3 class="h2">Downloads</h3>
+							<section>
+								<h4>MouseWheel Jquery plugin</h4>
+								<a href="docs/js_mousewheel.zip" 
+									target="_blank" class="link download" download="">Download JS file</a>
+							</section>
+							<section>
+								<h4>Link your js plugin</h4>
+								<p>Add the jquery.mousewheel.min.js file into your js folder with your scripts.js. Link it in your body <strong>above</strong> your script.js call.</p>
+								<div>
+									<code>
+										&lt;script src="https://code.jquery.com/jquery-3.4.1.min.js"&gt;&lt;/script&gt;<br />
+										<span style="background-color: yellow;">&lt;script src="js/jquery.mousewheel.min.js"&gt;&lt;/script&gt;</span><br />
+										&lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+									</code>
+								</div>
+							</section>
+							<section>
+								<h4>Add the mousewheel functionality</h4>
+								<p>Add this jQuery to your custom scripts.js file.</p>
+								<div>
+									<code>
+										$(document).ready(function() {<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;$('html, body, *').mousewheel(function(e, delta) {<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.scrollLeft -= (delta);<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.preventDefault();<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;});<br />
+										});
+									</code>
+								</div>
+							</section>
+						</section>
+					</section>
 					<section class="week" id="week9" name="week9">
 						<h1 class="slug">Week 9</h1>
 						<h2 class="h1">Javscript: actually, jQuery</h2>
@@ -100,7 +140,9 @@
 							<h3 class="h2">Due next week</h3>
 							<section>
 								<h4 class="h5">MA09: jQuery exercise (2.5%)</h4>
-								<p>Edit this existing project with jQuery already in it. Feel free to experiment. But the main point is to have images also appear, well positioned, in sections when they are scrolled to. Images are included in the folder.</p>
+								<p>Edit this existing project with jQuery already in it. Feel free to experiment. But
+									the main point is to have images also appear, well positioned, in sections when they
+									are scrolled to. Images are included in the folder.</p>
 								<p>This is purely a technical challenge.</p>
 								<a href="docs/js_exercise.zip" class="link download" download>Download folder</a>
 								<h5 style="margin-bottom: 0.5rem;">Submit the assignment here:</h5>
