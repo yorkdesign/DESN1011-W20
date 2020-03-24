@@ -35,9 +35,9 @@
 	<main>
 		<nav class="side-rail" id="side-rail">
 			<ul>
-				<!-- <li class="inactive">Week 13</li>
-				<li class="inactive">Week 12</li>-->
-				<li><a href="#week11">Week 11</a></li>
+				<!-- <li class="inactive">Week 13</li>-->
+				<li>Week 12</li>
+				<li class="inactive"><a href="#week11">Week 11</a></li>
 				<li class="inactive"><a href="#week10">Week 10</a></li>
 				<li class="inactive"><a href="#week9-5">Tutorial</a></li>
 				<li class="inactive"><a href="#week9">Week 9</a></li>
@@ -58,6 +58,77 @@
 		<div class="max-width container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<section class="week" id="week12" name="week12">
+						<h1 class="slug">Week 12</h1>
+						<h2 class="h1">Lecture</h2>
+						<p>Meeting invite: <a href="https://zoom.us/j/387667564" target="_blank">https://zoom.us/j/387667564</a></p>
+						<p>Attendance next week at the lecture is mandatory. Please make sure you attend.</p>
+						<section>
+							<h3 class="h2">Audio files tutorial</h3>
+							<h4 class="h5" style="margin-bottom: 0.5rem;">Load your songs</h4>
+							<code>
+								var tracks = [];<br />
+								for(i=0; i&lt;<span style="color: blue;">2</span>; i++) {<br />
+								&nbsp;&nbsp;&nbsp;tracks[i]=document.createElement('audio');<br />
+								}<br />
+
+								tracks[0].setAttribute('src', 'music/song-1.mp3');<br />
+								tracks[1].setAttribute('src', 'music/song-2.mp3');<br />
+							</code>
+							<h4 class="h5" style="margin-bottom: 0.5rem;">Play a song</h4>
+							<code>
+								tracks[<span style="color: blue;">0</span>].play();
+							</code>
+							<h4 class="h5" style="margin-bottom: 0.5rem;">Pause a song</h4>
+							<code>
+								tracks[<span style="color: blue;">0</span>].pause();
+							</code>
+							<h4 class="h5" style="margin-bottom: 0.5rem;">Reset a song to the beginning</h4>
+							<code>
+								tracks[<span style="color: blue;">0</span>].currentTime=0;
+							</code>
+							<h4 class="h5" style="margin-bottom: 0.5rem;">Pause/reset all songs except for the one you want to play</h4>
+							<code>
+								for(i=0; i&lt;tracks.length; i++) {<br />
+								&nbsp;&nbsp;&nbsp;if(i==<span style="color: blue;">0</span>) {<br />
+								&nbsp;<br />
+								&nbsp;&nbsp;&nbsp;}<br />
+								&nbsp;&nbsp;&nbsp;else {<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tracks[i].pause();<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tracks[i].currentTime = 0;<br />
+								&nbsp;&nbsp;&nbsp;}<br />
+								}<br />
+								tracks[<span style="color: blue;">0</span>].play();
+							</code>
+						</section>
+						<section>
+							<h3 class="h2">Due next week</h3>
+							<section>
+								<h4 class="h5">Responsive design (5%)</h4>
+								<p>In Figma, re-design your major project at least 50% of your content for a different size screen. If you did a desktop/computer sized design, design for mobile (320-411px wide); if you did a mobile size, design for desktop (1200px wide).
+								<p>This will not have to be coded nor will it need to be similar to how you are coding any responsiveness in your final project.</p>
+								<p>We are looking for considerations on translating your design to a different screen size that is considerate of size of objects and text that is both readable, understandable, and still impactful.</p>
+								<p><small>Due to the conditions of the reduced class, you have the option to not do this assignment and the weighting for all your other assignments will equally rise to make up this 5%.
+									If you have any questions, please reach out. Also please let your instructor know if you are choosing to forgoe this assignment.</small></p>
+							</section>
+							<section>
+								<h4 class="h5">Developed major project (20%)</h4>
+								<p>Time to take your design into development. It is very likely that you will need to
+									connect with your instructor for a consultation into what you need to look into to
+									code your specific project.</p>
+								<p>It is understood that you may have to make adjustments to your design based on what
+									your skill level is in development.</p>
+								<p>We are looking for well exectued code, accuracy to your design where appropriate
+									(understanding more intense functionality and positioning may have to be scaled
+									back), responsiveness where appropriate, and finally the overall user experience of
+									using/browsing your site.</p>
+								<p><small>The entire site is not required to be responsive as some projects are very
+										size specific, but an effort should be made to include responsiveness to an
+										extent (between some widths). Again, connect with your instructor to establish
+										these constraints. Everyone's project is a little different.</small></p>
+							</section>
+						</section>
+					</section>
 					<section class="week" id="week11" name="week11">
 						<h1 class="slug">Week 11</h1>
 						<h2 class="h1">Updates</h2>
