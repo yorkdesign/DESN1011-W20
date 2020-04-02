@@ -284,10 +284,10 @@
 								<p>Add this jQuery to your custom scripts.js file.</p>
 								<div>
 									<code>
-										$(document).ready(function() {<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;$('html, body, *').mousewheel(function(e, delta) {<br />
+										$(function() {<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;$("html").mousewheel(function(event, delta) {<br />
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.scrollLeft -= (delta);<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.preventDefault();<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event.preventDefault();<br />
 										&nbsp;&nbsp;&nbsp;&nbsp;});<br />
 										});
 									</code>
